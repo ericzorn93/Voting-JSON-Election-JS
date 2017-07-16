@@ -1,0 +1,134 @@
+<!doctype html>
+<!-- Eric Zorn, Module 4: Homework 1, ICT 4570: Webscripting with JavaScript -->
+<!-- July 3rd, 2017 -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--    <link rel="stylesheet" href="css/forms.css" />-->
+    <title>Eric Zorn: Module 4, Homework 1</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- Any student-provided body here -->
+
+    <!-- This is the Prompt Version of the Rectangle Area -->
+
+    <h1 class="title">Eric Zorn - Election Form 4B</h1>
+    <h4 id="productDescription"></h4>
+    <h5 id="electionID"></h5>
+
+    <!--
+   This is a sample form for use in Assignment4B, especially for those with little HTML experience.
+   This form would be included in an HTML document; it is not a full document.
+   Of course, you are welcome to build your own form, and free to reorganize the form in any sensible way you wish.
+   You should use CSS to style the form.
+
+   This particular form has the id "politics"
+   This form has 3 sections, each captured in a "fieldset"
+   A fieldset is a container with its own border and decorations, and a "legend" element which gives it a title.
+   The first fieldset captures the names for the candidates
+   The second fieldset captures the vote for the candidates
+   The third fieldset captures the statistical output.
+   Each field for input or output is given an ID to make it easy to find.
+   This form has room for 3 candidates
+
+   It is slightly changed from Assignment3A, since the user does not provide input for this form.
+ -->
+    <form id="politics">
+
+        <fieldset id="candidates">
+            <legend>Candidates</legend>
+
+            <div>
+                <label for="cand1">Candidate 1</label>
+                <input class="candidate" id="cand1" readonly>
+                <input class="party" id="party1" readonly>
+            </div>
+
+            <div>
+                <label for="cand2">Candidate 2</label>
+                <input class="candidate" id="cand2" readonly>
+                <input class="party" id="party2" readonly>
+            </div>
+
+            <div>
+                <label for="cand3">Candidate 3</label>
+                <input class="candidate" id="cand3" readonly>
+                <input class="party" id="party3" readonly>
+            </div>
+
+        </fieldset>
+
+        <fieldset id="votes">
+            <legend>Votes</legend>
+
+            <div>
+                <label for="votes1">Votes for Candidate 1</label>
+                <input class="count" id="votes1">
+            </div>
+
+            <div>
+                <label for="votes2">Votes for Candidate 2 </label>
+                <input class="count" id="votes2">
+            </div>
+
+            <div>
+                <label for="votes3">Votes for Candidate 3</label>
+                <input class="count" id="votes3">
+            </div>
+        </fieldset>
+
+        <fieldset id="statistics">
+            <legend>Current Results</legend>
+            <div>
+                <label for="date">As of </label>
+                <input type="date" id="date">
+            </div>
+            <div>
+                <label for="totalvotes">Total Votes counted</label>
+                <input id="totalvotes" readonly>
+            </div>
+
+            <div>
+                Candidate 1
+                <label for="cand1pct">Percentage</label>
+                <input id="cand1pct" readonly>
+            </div>
+            <div>
+                Candidate 2
+                <label for="cand2pct">Percentage</label>
+                <input id="cand2pct" readonly>
+            </div>
+            <div>
+                Candidate 3
+                <label for="cand3pct">Percentage</label>
+                <input id="cand3pct" readonly>
+            </div>
+        </fieldset>
+
+
+        <!--Submit Button-->
+        <br> <br>
+        <!-- <input type="button" value="Submit" class="submitButton"> -->
+
+    </form>
+    
+    <input type="button" value="Find Out More Information" id="submit" target="_blank">
+
+
+
+
+    <!-- Scripts (Professor Schwartz's and Mine) -->
+    <script src="js/voting41.js"></script>
+    <script src="js/myScripts.js"></script>
+
+</body>
+
+</html>
